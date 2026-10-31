@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="الأمير تيك — وجهتك للتقنية والإلكترونيات الفاخرة.">
+  <title>الأمير تيك | عالم التقنية بين يديك</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">شحن مجاني للطلبات فوق 500 ر.س <span>✦</span> ضمان موثوق على منتجاتنا</div>
+  <header class="header">
+    <a href="#home" class="brand"><span class="brand-icon">A<span>✦</span></span><span>الأمير <b>تيك</b><small>ALAMEER TECH</small></span></a>
+    <nav class="nav" id="nav">
+      <a href="#home">الرئيسية</a><a href="#products">المتجر</a><a href="#offers">العروض</a><a href="#footer">تواصل معنا</a>
+    </nav>
+    <div class="header-actions">
+      <label class="search"><span>⌕</span><input id="searchInput" placeholder="ابحث عن جهاز..." aria-label="ابحث عن جهاز"></label>
+      <button class="icon-btn" id="accountBtn" aria-label="حساب المستخدم">♙</button>
+      <button class="cart-btn" id="cartBtn" aria-label="سلة التسوق">🛒 <span>السلة</span><b id="cartCount">0</b></button>
+      <button class="menu-btn" id="menuBtn" aria-label="القائمة">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="kicker"><i></i> مستقبل التقنية يبدأ من هنا</span>
+        <h1>ارتقِ بتجربتك<br><em>إلى مستوى آخر.</em></h1>
+        <p>اكتشف أحدث الأجهزة والإلكترونيات المختارة بعناية. أداء استثنائي، تصميم أنيق، وتجربة تستحقها.</p>
+        <div class="hero-buttons"><a href="#products" class="btn gold">تسوق الآن <span>←</span></a><a href="#offers" class="btn ghost">اكتشف العروض</a></div>
+        <div class="hero-trust"><span>✓ منتجات أصلية</span><span>✓ شحن سريع</span><span>✓ دعم مميز</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="halo"></div><div class="hero-glow"></div>
+        <img src="https://images.unsplash.com/photo-1512499617640-c74ae3a79d37?auto=format&fit=crop&w=1100&q=85" alt="أجهزة تقنية عصرية" onerror="this.src='https://images.unsplash.com/photo-1512499617640-c74ae3a79d37?auto=format&fit=crop&w=1100&q=85'">
+        <div class="hero-card"><span class="hero-card-icon">✦</span><div><small>اختيار المحترفين</small><b>تقنية بلا حدود</b></div></div>
+        <div class="hero-chip">NEW<br><b>2026</b></div>
+      </div>
+    </section>
+
+    <section class="quick-cats">
+      <a href="#products" data-jump="all"><span>▦</span><b>كل المنتجات</b><small>تصفح الكل</small></a>
+      <a href="#products" data-jump="phones"><span>▯</span><b>الهواتف</b><small>أحدث الإصدارات</small></a>
+      <a href="#products" data-jump="audio"><span>♫</span><b>الصوتيات</b><small>صوت بتفاصيله</small></a>
+      <a href="#products" data-jump="computers"><span>▣</span><b>الحواسيب</b><small>قوة وإنتاجية</small></a>
+      <a href="#products" data-jump="accessories"><span>◇</span><b>الإكسسوارات</b><small>كمل تجربتك</small></a>
+    </section>
+
+    <section class="products-section" id="products">
+      <div class="section-title"><div><span class="kicker">اختيارات الأمير تيك</span><h2>منتجات <em>مختارة</em></h2></div><p>تقنيات حديثة بتفاصيل تليق بك.</p></div>
+      <div class="filters" id="filters"><button class="filter active" data-category="all">الكل</button><button class="filter" data-category="phones">هواتف</button><button class="filter" data-category="audio">صوتيات</button><button class="filter" data-category="computers">حواسيب</button><button class="filter" data-category="accessories">إكسسوارات</button></div>
+      <div class="product-grid" id="productGrid"></div><p class="empty" id="emptyState" hidden>لا توجد منتجات تطابق بحثك.</p>
+    </section>
+
+    <section class="offer-banner" id="offers"><div><span class="kicker">عرض لفترة محدودة</span><h2>تقنية أكثر.<br><em>سعر أذكى.</em></h2><p>استمتع باختياراتنا المميزة وعروضنا الموسمية.</p><a href="#products" class="btn gold">اكتشف العروض ←</a></div><div class="offer-art"><span>٪</span><b>خصومات<br>حتى 25%</b></div></section>
+
+    <section class="newsletter"><div><span class="kicker">ابقَ على اطلاع</span><h2>كن أول من يعرف جديد التقنية</h2><p>اشترك لتصلك آخر الإصدارات والعروض الحصرية.</p></div><form id="newsletterForm"><input type="email" placeholder="بريدك الإلكتروني" required><button class="btn gold">اشترك الآن</button></form></section>
+  </main>
+
+  <footer id="footer"><a href="#home" class="brand"><span class="brand-icon">A<span>✦</span></span><span>الأمير <b>تيك</b><small>ALAMEER TECH</small></span></a><p>نختار لك التقنية التي تصنع الفرق.</p><small>© <span id="year"></span> الأمير تيك. جميع الحقوق محفوظة.</small></footer>
+
+  <div class="shade" id="shade"></div>
+  <aside class="drawer" id="cartDrawer" aria-hidden="true">
+    <div class="drawer-head"><div><span class="kicker">مشترياتك</span><h2>سلة التسوق</h2></div><button class="close" id="closeCart">×</button></div>
+    <div class="cart-list" id="cartItems"></div><div class="cart-empty" id="cartEmpty"><span>🛒</span><h3>سلتك بانتظار اختياراتك</h3><p>أضف جهازًا يعجبك وابدأ تجربة التسوق.</p></div>
+    <div class="drawer-foot"><div class="total"><span>الإجمالي</span><b id="cartTotal">0 ر.س</b></div><button class="btn gold full" id="checkoutBtn">إتمام الطلب ←</button><small>واجهة تجريبية — لا يتم تحصيل أي مبلغ.</small></div>
+  </aside>
+
+  <div class="modal-backdrop" id="modalBackdrop">
+    <section class="modal" id="modal" role="dialog" aria-modal="true" aria-label="نافذة المتجر"><button class="close modal-close" id="closeModal">×</button><div id="modalContent"></div></section>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
